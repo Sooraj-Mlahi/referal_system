@@ -1,0 +1,35 @@
+Installations for backend:
+"bcrypt"
+"body-parser"
+"cors"
+"crypto"
+"dotenv"
+"express"
+"jsonwebtoken"
+"mongoose" 
+"nodemailer"
+
+Installations for frontend:
+"axios"
+"react"
+"react-dom"
+"react-router-dom"
+
+
+NOTE:
+
+** In the backend, in controllers, in both adminController and userController, you have to set up your email for the forgotPassword functionality to work.
+
+** Make sure to make changes in .env according to your needs.
+
+** MongoDB is set up locally, 
+mongoose.connect('mongodb://localhost:27017/referral_system', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
+You will just have to change the link to connect it to your online server, if its needed.
+
+
+** Admin Creation is Manual for security purposes, and can be created by running the createAdmin.js in the backend, You can change the username, email and password according to what you want to set up and then run the file as:
+"node createAdmin.js"
